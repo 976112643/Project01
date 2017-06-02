@@ -5,7 +5,9 @@ import android.support.annotation.Nullable;
 import android.view.View;
 
 import com.wq.base.LBaseFragment;
+import com.wq.common.util.IntentUtil;
 import com.wq.project01.R;
+import com.wq.template.AddTemplateActivity;
 
 /**
  * 首页
@@ -18,6 +20,12 @@ public class HomeFragment extends LBaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //页面创建
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IntentUtil.startActivity(that, AddTemplateActivity.class);
+            }
+        });
     }
 
     @Override
