@@ -24,7 +24,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
- * Created by weiquan on 2017/6/2.
+ * Created by weiquan on 2017/6/2.0
  */
 
 public class TeamTemplateListActivity extends LPageActivity {
